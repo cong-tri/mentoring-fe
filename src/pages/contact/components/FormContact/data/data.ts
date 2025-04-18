@@ -1,0 +1,31 @@
+export const inputContacts = [
+  {
+    id: 1,
+    label: "Họ và tên",
+    name: "name",
+    type: "text",
+    placeholder: "Nguyễn Văn A",
+    minLength: 4,
+    maxLength: 30,
+    required: true,
+    errorMessage: "Họ và tên phải từ 4 đến 30 ký tự!",
+  },
+  {
+    id: 2,
+    label: "Email",
+    name: "email",
+    type: "email",
+    placeholder: "example@gmail.com",
+    required: true,
+    errorMessage: "Email không hợp lệ!",
+  },
+  {
+    id: 3,
+    label: "Số điện thoại",
+    name: "phone",
+    type: "number",
+    placeholder: "0301 2345 67",
+    required: true,
+    errorMessage: "Số điện thoại không hợp lệ!",
+  },
+];

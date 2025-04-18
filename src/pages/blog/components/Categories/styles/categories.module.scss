@@ -1,0 +1,31 @@
+.category-card {
+  background: var(--white);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: var(--transition);
+  height: 150px;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+  }
+  i {
+    font-size: 24px;
+    color: #562ee0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .category-card {
+    margin: 10px !important;
+    height: 150px !important;
+  }
+}
+
+@media (min-width: 767.99px) and (max-width: 991.98px) {
+  .category-card {
+    margin-top: 20px !important;
+  }
+}

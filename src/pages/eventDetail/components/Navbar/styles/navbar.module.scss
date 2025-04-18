@@ -1,0 +1,14 @@
+.custom-navbar {
+  position: sticky;
+  top: 90px;
+  z-index: 999px;
+  background-color: #b5a8d5;
+  padding: 0;
+
+  a {
+    color: white;
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}

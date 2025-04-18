@@ -1,0 +1,46 @@
+.jobs {
+  //for jobs content
+  position: relative;
+
+  .jobs-content {
+    margin: 5rem 0;
+  }
+
+  .jobs-search-mobile {
+    position: fixed;
+    bottom: 2.6rem;
+    left: 2rem;
+    z-index: 1000;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 0;
+    background-color: var(--white);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .jobs {
+    .jobs_content {
+      // margin: 2rem 0;
+
+      h4 {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .jobs {
+    .jobs_content {
+      margin: 2rem 0;
+
+      h4 {
+        font-size: 20px;
+      }
+    }
+  }
+}

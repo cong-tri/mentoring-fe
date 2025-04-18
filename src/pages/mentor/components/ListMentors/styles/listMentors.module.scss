@@ -1,0 +1,98 @@
+//for list mentor component
+.mentor_list {
+  margin: 5rem 0;
+  h1 {
+    font-size: 40px;
+    font-weight: 550;
+    text-align: center;
+    @media screen and (max-width: 576px) {
+      font-size: 28px;
+    }
+  }
+  .list {
+    margin-bottom: 3rem;
+    .list_item {
+      border-radius: var(--border-radius);
+      transition: all 1s;
+      // height: 400px;
+
+      &:hover {
+        transform: translateY(20px);
+      }
+
+      .list-item-img {
+        width: 100%;
+        height: 250px;
+        border-top-left-radius: var(--border-radius);
+        border-top-right-radius: var(--border-radius);
+
+        img {
+          border-top-left-radius: var(--border-radius);
+          border-top-right-radius: var(--border-radius);
+          transition:
+            transform 0.4s ease,
+            filter 0.4s ease;
+
+          &:hover {
+            transform: scale(1.1);
+            border-radius: var(--border-radius);
+            // filter: brightness(1.2);
+          }
+        }
+      }
+
+      button {
+        display: block;
+        border: none;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        background: var(--primary-gradient);
+        padding: 1rem;
+        border-radius: var(--border-radius);
+        color: var(--white);
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0) 100%
+          );
+          transition: left 1s ease;
+          z-index: -1;
+        }
+        &:hover {
+          box-shadow: 0 20px 20px rgba(37, 117, 252, 0.2);
+
+          &:before {
+            left: 100%;
+          }
+        }
+      }
+
+      .list-item-title {
+        height: 70px;
+      }
+
+      .list-item-content {
+        height: 100px;
+      }
+
+      @media screen and (max-width: 576px) {
+        .list-item-img {
+          height: 200px;
+        }
+      }
+    }
+  }
+}

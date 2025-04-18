@@ -1,0 +1,12 @@
+//for jobs banner
+.jobs_banner {
+  background-color: rgb(202, 199, 199);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  @media screen and (max-width: 576px) {
+    height: 300px;
+  }
+}

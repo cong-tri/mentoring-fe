@@ -1,0 +1,30 @@
+.parents-contact {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #f8f8f8;
+  .contact-banner {
+    background-color: rgb(202, 199, 199);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    @media screen and (max-width: 576px) {
+      height: 300px;
+    }
+  }
+  .contact-map {
+    margin-bottom: 10px;
+  }
+  .row-contact {
+    margin: 50px;
+    background-color: #f8f8f8;
+    @media (max-width: 767.98px) {
+      margin: 20px 5px;
+    }
+    @media (min-width: 768px) and (max-width: 992.98px) {
+      margin: 20px;
+    }
+  }
+}

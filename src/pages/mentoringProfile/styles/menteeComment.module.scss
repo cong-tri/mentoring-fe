@@ -1,0 +1,42 @@
+@use "../../../styles/global.scss";
+
+.testimonial {
+  background-color: #e9eef8;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  position: relative;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &:before {
+    content: "";
+    font-size: 4rem;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    color: rgba(106, 17, 203, 0.1);
+    font-family: serif;
+  }
+}
+
+.testimonial-author {
+  font-weight: bold;
+  text-align: right;
+  color: #555;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid var(--white);
+  }
+}

@@ -1,0 +1,66 @@
+@use "../../../styles/global.scss";
+
+.form-group {
+  margin-bottom: 20px;
+
+  label {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    margin-bottom: 5px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--gray-medium);
+    border-radius: 8px;
+    font-size: var(--font-size-small);
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: var(--primary-color);
+      outline: none;
+    }
+  }
+
+  textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+
+  input[readonly] {
+    background: var(--gray-light);
+    color: var(--text-light);
+  }
+}
+
+.error {
+  color: var(--error-color);
+  font-size: var(--font-size-xsmall);
+  margin-top: 4px;
+}
+
+.input-error {
+  border-color: var(--error-color) !important;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  background: var(--primary-gradient);
+  color: var(--white);
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4);
+  }
+}

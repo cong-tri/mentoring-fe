@@ -1,0 +1,17 @@
+//for jobs search
+.jobs_search {
+  background: var(--primary-gradient);
+  margin: 3rem 0;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 2px;
+
+  @media screen and (max-width: 576px) {
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+  @media screen and (max-width: 992px) {
+    // margin: 2rem 0;
+    padding: 2rem 1rem;
+  }
+}

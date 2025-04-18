@@ -1,0 +1,20 @@
+.title {
+  text-align: center;
+  color: #562ee0;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.search-box {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  .btn {
+    background: var(--primary-gradient);
+    width: 40px !important;
+    border: none;
+    border-radius: 10px;
+  }
+}

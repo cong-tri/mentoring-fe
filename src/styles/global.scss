@@ -1,0 +1,41 @@
+:root {
+  // Primary Colors
+  --primary-color: #2575fc;
+  --secondary-color: #6a11cb;
+  --text-color: #333;
+  --text-light: #666;
+  --error-color: #ff4444;
+  --white: #fff;
+  --gray-light: #f5f7fa;
+  --gray-medium: #ddd;
+  --gray-dark: #999;
+  --shadow-color: rgba(37, 117, 252, 0.3);
+  --background-color: #f8f9fd;
+
+  // Primary Gradient
+  --primary-gradient: linear-gradient(
+    135deg,
+    var(--secondary-color) 0%,
+    var(--primary-color) 100%
+  );
+
+  // Font
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-playfair: "Playfair Display", "Roboto", sans-serif;
+
+  --font-size-base: 1rem;
+  --font-size-small: 0.9rem;
+  --font-size-xsmall: 0.85rem;
+  --font-size-large: 1.6rem;
+  --font-size-xlarge: 2.8rem;
+
+  // Common transitions
+  --transition: all 0.3s ease;
+
+  // Border radius
+  --border-radius: 20px;
+}
+
+html {
+  font-family: var(--font-family);
+}

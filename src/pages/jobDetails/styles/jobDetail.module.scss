@@ -1,0 +1,54 @@
+.title {
+  color: #562ee0;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.jobs-sumary {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.container-main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+.tab-active {
+  border-bottom: 3px solid #6a5acd;
+  font-weight: bold;
+  color: #6a5acd !important;
+}
+.info-box {
+  background-color: #ddd9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease,
+    background-color 0.4s ease;
+}
+
+.info-box:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+  background-color: #cbc5ff; /* Thay đổi màu nền */
+}
+
+.info-box-items a {
+  text-decoration: none;
+  color: #333333;
+}
+.info-box-items a:hover {
+  color: #7c7aed;
+}
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
