@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaHandshake, FaRegHandshake, FaPen } from "react-icons/fa";
 // import styles from "./formrequest.module.scss";
 // import { FaRegHandshake, FaPen } from "react-icons/fa";
-import styles from "./RequestMentor.module.scss";
+import styles from "./requestmentor.module.scss";
 
 function RequestMentor() {
   const [showForm, setShowForm] = useState(false);
